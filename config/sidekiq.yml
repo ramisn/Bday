@@ -1,0 +1,8 @@
+:schedule:
+  # hello_world:
+  #   cron: '0 * * * * *'   # Runs once per minute
+  #   class: HelloWorld
+  birth_day:
+    # cron: '0 * * * * *'
+    cron: '59 18 * * 1-7'   # Runs once per minute
+    class: BirthDay
