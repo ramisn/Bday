@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 	post '/verify' => 'verifications#verify_code'
 	post '/future' => 'verifications#send_futuresms'
 	
-	mount Sidekiq::Web => '/sidekiq'
+	mount Sidekiq::Web => '/'
 	# mount SidekiqScheduler::Web => '/sidekiqs'
 end
